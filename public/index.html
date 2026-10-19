@@ -1,0 +1,1194 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BCW Beulencenter Wuppertal | Dellen entfernen ohne Lackieren</title>
+<meta name="description" content="Lackierfreies Ausbeulen, Smart-Repair, Autoglas und Fahrzeugaufbereitung in Wuppertal. Linderhauser Straße 38, 42279 Wuppertal. Telefon 0172 2139306.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="BCW Beulencenter Wuppertal">
+<meta property="og:description" content="Dellen raus. Originallack bleibt. Lackierfreies Ausbeulen in Wuppertal.">
+<meta property="og:image" content="images/showroom-bcw.webp">
+<meta property="og:locale" content="de_DE">
+<link rel="preload" as="image" href="images/showroom-bcw.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/phosphor/light.css">
+<link rel="stylesheet" href="assets/vendor/phosphor/fill.css">
+<script>
+  var d = document.documentElement;
+  d.classList.add('js');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "BCW - Beulencenter Wuppertal",
+  "image": "images/fassade.webp",
+  "telephone": "+491722139306",
+  "email": "info@beulencenter.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Linderhauser Straße 38",
+    "postalCode": "42279",
+    "addressLocality": "Wuppertal",
+    "addressCountry": "DE"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 51.2914623, "longitude": 7.2385214 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:00", "closes": "15:00" }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#fff;
+  --surface:#f5f6f8;
+  --surface-2:#eceef2;
+  --line:rgba(10,12,16,.1);
+  --line-strong:rgba(10,12,16,.2);
+  --text:#0a0c10;
+  --muted:#565c66;
+  --dim:#adb2ba;
+  --accent:#2160c4;          /* Logo-Blau auf Weiß, Kontrast 5,9:1 */
+  --accent-hi:#1b50a8;
+  --accent-photo:#7cadf7;    /* Akzent auf dunklem Foto */
+  --err:#b42b27;
+  --pad:clamp(20px,4.4vw,72px);
+  --maxw:1440px;
+  --r-img:22px;              /* Bilder und Flächen */
+  --r-field:14px;            /* Eingabefelder; Knöpfe und Chips sind rund */
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --ease-drawer:cubic-bezier(.32,.72,0,1);
+  --font:'Archivo',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:var(--font);font-size:17px;line-height:1.55;font-weight:400;
+  font-variation-settings:"wdth" 100;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  overflow-x:clip;
+}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+a{color:inherit}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+html{scrollbar-color:#c5c9d0 #fff;scrollbar-width:thin}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#fff}
+::-webkit-scrollbar-thumb{background:#c5c9d0;border-radius:10px;border:2px solid #fff}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.skip{position:absolute;left:-9999px;top:12px;z-index:200;background:var(--text);color:#fff;padding:10px 16px;border-radius:999px}
+.skip:focus{left:12px}
+
+/* ---------- Typografie ---------- */
+.display{font-weight:780;font-variation-settings:"wdth" 118;letter-spacing:-.035em;line-height:.98;margin:0;text-wrap:balance}
+.h2{font-size:clamp(2.4rem,5.6vw,5.4rem)}
+.lead{color:var(--muted);font-size:clamp(1.05rem,1.3vw,1.22rem);line-height:1.55;max-width:46ch;margin:0;text-wrap:pretty}
+.accent{color:var(--accent)}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- Knöpfe ---------- */
+.btn{
+  --h:56px;
+  display:inline-flex;align-items:center;gap:14px;height:var(--h);
+  padding:0 8px 0 24px;border-radius:999px;border:0;
+  font:600 16px/1 var(--font);font-variation-settings:"wdth" 108;letter-spacing:-.01em;
+  text-decoration:none;cursor:pointer;white-space:nowrap;
+  transition:transform 160ms var(--ease-out),background-color 200ms ease,color 200ms ease,box-shadow 200ms ease;
+}
+.btn:active{transform:scale(.97)}
+.btn .ico{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:19px;transition:transform 380ms var(--ease-out),background-color 200ms ease}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary .ico{background:rgba(255,255,255,.18)}
+.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 1px var(--line-strong)}
+.btn-ghost .ico{background:rgba(10,12,16,.06)}
+.photo .btn-ghost{color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.42)}
+.photo .btn-ghost .ico{background:rgba(255,255,255,.14)}
+.btn[disabled]{opacity:.6;cursor:progress}
+@media (hover:hover) and (pointer:fine){
+  .btn-primary:hover{background:var(--accent-hi)}
+  .btn-ghost:hover{box-shadow:inset 0 0 0 1px rgba(10,12,16,.5)}
+  .photo .btn-ghost:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.8)}
+  .btn:hover .ico{transform:translateX(3px) rotate(-8deg)}
+}
+
+/* ---------- Navigation ---------- */
+.nav{
+  --nfg:var(--text);--nmuted:var(--muted);--nbg:rgba(255,255,255,0);--nring:rgba(10,12,16,0);--nchip:rgba(10,12,16,.06);--nlogo:var(--accent);
+  position:fixed;z-index:50;top:14px;left:50%;
+  width:min(calc(100% - 24px),1180px);transform:translateX(-50%);
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  height:64px;padding:0 8px 0 18px;border-radius:999px;color:var(--nfg);
+  background:var(--nbg);box-shadow:inset 0 0 0 1px var(--nring);
+  transition:background-color 400ms var(--ease-out),box-shadow 400ms var(--ease-out),color 300ms ease,transform 500ms var(--ease-out);
+}
+.nav.scrolled{--nbg:rgba(255,255,255,.82);--nring:rgba(10,12,16,.08);
+  -webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);
+  box-shadow:inset 0 0 0 1px var(--nring),0 14px 40px -20px rgba(10,12,16,.35)}
+.nav.on-photo{--nfg:#fff;--nmuted:rgba(255,255,255,.78);--nchip:rgba(255,255,255,.16);--nlogo:var(--accent-photo)}
+.nav.on-photo.scrolled{--nbg:rgba(10,12,16,.5);--nring:rgba(255,255,255,.14)}
+.nav.hide{transform:translate(-50%,-120px)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.mark{display:inline-flex;align-items:center;font-weight:900;font-variation-settings:"wdth" 112;font-size:25px;letter-spacing:-.05em;line-height:1}
+.mark .w{display:inline-grid;place-items:center;width:1.18em;height:1.18em;margin-left:.04em;border:3px solid var(--nlogo,var(--accent));border-radius:50%;font-size:.74em;letter-spacing:0;padding-bottom:.08em}
+.brand-name{font-size:12.5px;line-height:1.15;font-weight:600;color:var(--nmuted,var(--muted));letter-spacing:.01em}
+.nav-links{display:flex;gap:4px;margin:0;padding:0;list-style:none}
+.nav-links a{display:block;padding:10px 14px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:500;color:var(--nmuted);transition:color 200ms ease,background-color 200ms ease}
+.nav-links a:hover{color:var(--nfg);background:var(--nchip)}
+.nav .btn{--h:48px;padding-left:18px;font-size:15px}
+.nav .btn .ico{width:34px;height:34px;font-size:17px}
+.burger{display:none;width:48px;height:48px;border-radius:50%;border:0;background:var(--nchip);position:relative;cursor:pointer;color:var(--nfg)}
+.burger span{position:absolute;left:15px;right:15px;height:1.5px;background:currentColor;border-radius:2px;transition:transform 420ms var(--ease-drawer),top 420ms var(--ease-drawer)}
+.burger span:nth-child(1){top:20px}
+.burger span:nth-child(2){top:27px}
+.menu-open .burger span:nth-child(1){top:23.5px;transform:rotate(45deg)}
+.menu-open .burger span:nth-child(2){top:23.5px;transform:rotate(-45deg)}
+.menu-open .nav{--nfg:var(--text);--nchip:rgba(10,12,16,.06)}
+
+.sheet{
+  position:fixed;inset:0;z-index:40;background:rgba(255,255,255,.97);
+  -webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:110px var(--pad) 40px;
+  opacity:0;visibility:hidden;transition:opacity 360ms var(--ease-out),visibility 0s linear 360ms;
+}
+.menu-open .sheet{opacity:1;visibility:visible;transition:opacity 360ms var(--ease-out)}
+.sheet ul{list-style:none;margin:0 0 36px;padding:0}
+.sheet li{overflow:hidden}
+.sheet li a{
+  display:block;padding:6px 0;text-decoration:none;
+  font-size:clamp(2.4rem,11vw,3.6rem);font-weight:760;font-variation-settings:"wdth" 116;letter-spacing:-.035em;line-height:1.05;
+  transform:translateY(105%);transition:transform 640ms var(--ease-out);
+}
+.menu-open .sheet li a{transform:none}
+.menu-open .sheet li:nth-child(2) a{transition-delay:50ms}
+.menu-open .sheet li:nth-child(3) a{transition-delay:100ms}
+.menu-open .sheet li:nth-child(4) a{transition-delay:150ms}
+.menu-open .sheet li:nth-child(5) a{transition-delay:200ms}
+.sheet-meta{color:var(--muted);font-size:15px;line-height:1.6}
+.sheet-meta a{text-decoration:none;color:var(--text)}
+
+/* ---------- Hero ---------- */
+.hero{--gx:max(var(--pad),calc((100% - var(--maxw)) / 2 + var(--pad)));--gy:clamp(28px,6vh,64px);
+  position:relative;height:100vh;height:100svh;min-height:560px;overflow:hidden;background:#fff}
+.hv{position:absolute;inset:0}
+.hphoto{position:absolute;inset:0;overflow:hidden;background:#15171b}
+.hphoto img{width:100%;height:100%;object-fit:cover;object-position:56% 52%;
+  transform:translate3d(calc(var(--px,0) * -16px),calc(var(--py,0) * -10px),0) scale(1.05)}
+.hscrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to top,rgba(0,0,0,.86) 0%,rgba(0,0,0,.6) 26%,rgba(0,0,0,0) 58%),
+             linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0) 22%)}
+.hcopy{position:absolute;left:var(--gx);bottom:var(--gy);width:min(700px,calc(100% - var(--gx) * 2));color:var(--text)}
+.hcopy h1{font-size:clamp(2.6rem,5.6vw,5.6rem);margin:0 0 22px}
+.hcopy h1 .line{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.hcopy h1 .line > span{display:block}
+.hcopy .lead{margin-bottom:30px;max-width:44ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hcopy.photo{color:#fff}
+.hcopy.photo .lead{color:rgba(255,255,255,.84)}
+.hcopy.photo h1 .accent{color:var(--accent-photo)}
+
+/* Lichtbalken: Lampe fährt über das Auto */
+.li-dim .hphoto img{filter:brightness(.55) saturate(.6)}
+.li-bright{position:absolute;inset:0;clip-path:inset(0 calc((1 - var(--lp,0)) * 100%) 0 0)}
+.li-bar{position:absolute;top:0;bottom:0;left:calc(var(--lp,0) * 100%);width:3px;margin-left:-1.5px;background:#fff;
+  box-shadow:0 0 26px 6px rgba(255,255,255,.55);opacity:var(--bo,1);pointer-events:none}
+.li-chips{position:absolute;inset:0;pointer-events:none}
+.li-chip{
+  position:absolute;left:calc(var(--x) * 1%);top:calc(var(--y) * 1%);
+  display:inline-flex;align-items:center;gap:10px;padding:10px 16px 10px 12px;border-radius:999px;white-space:nowrap;
+  background:rgba(10,12,16,.74);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;
+  font-weight:600;font-size:15px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);
+  opacity:0;transform:translate(-50%,10px) scale(.94);
+  transition:opacity 500ms var(--ease-out),transform 600ms var(--ease-out);
+}
+.li-chip.on{opacity:1;transform:translate(-50%,0) scale(1)}
+.li-chip i{font-size:20px;color:var(--accent-photo)}
+
+/* ---------- Abschnitte ---------- */
+section{position:relative}
+.sec{padding:clamp(96px,14vw,184px) 0}
+.sec-grey{background:var(--surface)}
+.sec-head{display:grid;gap:22px;margin-bottom:clamp(48px,7vw,96px);max-width:820px}
+
+/* Lackierfrei */
+.pdr-figure{position:relative;border-radius:var(--r-img);overflow:hidden;aspect-ratio:16/9;background:var(--surface-2);
+  clip-path:inset(var(--cy,0%) var(--cx,0%) var(--cy,0%) var(--cx,0%) round var(--r-img))}
+.pdr-figure img{width:100%;height:100%;object-fit:cover;transform:scale(var(--s,1))}
+.facts{list-style:none;margin:clamp(64px,9vw,120px) 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(28px,5vw,80px)}
+.fact{padding:28px 0 34px;opacity:var(--o,1)}
+.fact h3{font-size:clamp(1.7rem,3.1vw,2.9rem);margin:0 0 10px}
+.fact p{margin:0;color:var(--muted);max-width:40ch}
+.fact svg{display:block;width:100%;height:30px;margin-bottom:24px;overflow:visible}
+.fact path{fill:none;stroke:rgba(10,12,16,.85);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round}
+
+/* Leistungen */
+.svc{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,5vw,88px);align-items:start}
+.svc-list{list-style:none;margin:0;padding:0}
+.svc-item{padding:clamp(40px,6vw,72px) 0;border-top:1px solid var(--line)}
+.svc-item:last-child{border-bottom:1px solid var(--line)}
+.svc-item h3{font-size:clamp(2rem,4.2vw,3.9rem);margin:0 0 18px;color:var(--dim);transition:color 500ms var(--ease-out)}
+.svc-item.on h3{color:var(--text)}
+.svc-item p{margin:0 0 22px;color:var(--muted);max-width:48ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{font-size:14px;font-weight:500;padding:7px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-strong);color:var(--text)}
+.svc-media{position:sticky;top:12vh;height:76vh;border-radius:var(--r-img);overflow:hidden;background:var(--surface-2)}
+.svc-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(100% 0 0 0)}
+.svc-media img.first{clip-path:inset(0)}
+.svc-img-m{display:none}
+.svc-extra{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:40px;color:var(--muted);font-size:15.5px}
+.svc-extra span{display:inline-flex;align-items:center;gap:10px}
+.svc-extra i{font-size:22px;color:var(--accent)}
+
+/* Ablauf */
+.flow{overflow:hidden;background:var(--bg)}
+.flow-pin{height:100vh;height:100dvh;display:flex;flex-direction:column;justify-content:center;padding:96px 0 48px}
+.flow-track{display:flex;gap:clamp(20px,2.4vw,36px);padding:0 var(--pad);will-change:transform}
+.flow-intro{flex:0 0 min(420px,80vw);display:flex;flex-direction:column;justify-content:flex-end;gap:22px;padding-right:2vw}
+.step{flex:0 0 clamp(300px,34vw,520px);margin:0}
+.step figure{border-radius:var(--r-img);overflow:hidden;aspect-ratio:4/3;background:var(--surface-2);margin-bottom:24px}
+.step img{width:100%;height:100%;object-fit:cover}
+.step h3{font-size:clamp(1.6rem,2.4vw,2.3rem);margin:0 0 10px}
+.step p{margin:0;color:var(--muted);max-width:42ch}
+.flow-progress{margin:44px var(--pad) 0;height:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.flow-progress i{display:block;height:100%;background:var(--accent);transform-origin:left;transform:scaleX(0)}
+
+/* Werkstatt-Band */
+.band{height:240vh}
+.band-pin{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden;background:#fff}
+.band-frame{position:absolute;inset:0;
+  clip-path:inset(calc((1 - var(--p,0)) * 12vh) calc((1 - var(--p,0)) * 10vw) round calc((1 - var(--p,0)) * 28px))}
+.band-frame img{width:100%;height:100%;object-fit:cover;transform:scale(calc(1.16 - var(--p,0) * .16))}
+.band-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.82),rgba(0,0,0,0) 55%);opacity:var(--p,0)}
+.band-copy{position:absolute;left:0;right:0;bottom:clamp(32px,7vh,72px);z-index:2;color:#fff;opacity:var(--q,0);transform:translateY(calc((1 - var(--q,0)) * 30px))}
+.band-copy .wrap{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:24px 48px}
+.band-copy p{margin:0;color:rgba(255,255,255,.86);max-width:44ch}
+
+/* Inhaber */
+.owner{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,6vw,110px);align-items:start}
+.owner .lead{margin-top:24px}
+.hail{margin:0;padding:0;list-style:none}
+.hail-title{font-size:15px;font-weight:600;color:var(--muted);margin:6px 0 18px}
+.hail li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+.hail li:last-child{border-bottom:1px solid var(--line)}
+.hail .yr{font-weight:650;font-variation-settings:"wdth" 110;color:var(--accent)}
+
+/* Kontakt */
+.contact-title{margin-bottom:clamp(40px,5vw,72px)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,5vw,80px);align-items:start}
+.cform{background:#fff;border-radius:var(--r-img);padding:clamp(24px,3.4vw,48px);box-shadow:0 1px 0 var(--line),0 30px 60px -40px rgba(10,12,16,.25)}
+.cform h3{margin:0 0 28px;font-size:clamp(1.6rem,2.4vw,2.2rem)}
+.cf-body{display:grid;gap:22px}
+.cf-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.cf-field{display:grid;gap:8px;border:0;padding:0;margin:0;min-width:0;align-content:start}
+.cf-field > label,.cf-field > legend{font-size:14px;font-weight:600;color:var(--text);padding:0;margin-bottom:2px}
+.cf-field small{font-weight:450;color:var(--muted)}
+.cf-input{
+  width:100%;height:54px;padding:0 16px;border:0;border-radius:var(--r-field);background:var(--surface);color:var(--text);
+  font:450 16px/1.3 var(--font);box-shadow:inset 0 0 0 1px var(--line-strong);
+  transition:box-shadow 200ms ease,background-color 200ms ease;
+}
+textarea.cf-input{height:auto;min-height:132px;padding:14px 16px;resize:vertical}
+.cf-input::placeholder{color:#69707a}
+.cf-input:focus{outline:none;background:#fff;box-shadow:inset 0 0 0 2px var(--accent)}
+.cf-input[aria-invalid="true"],.cf-field[aria-invalid="true"] .cf-chip span{box-shadow:inset 0 0 0 2px var(--err)}
+.cf-err{margin:0;font-size:14px;color:var(--err);font-weight:500}
+.cf-chips{display:flex;flex-wrap:wrap;gap:8px}
+.cf-chip{position:relative}
+.cf-chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.cf-chip span{display:inline-flex;align-items:center;height:46px;padding:0 18px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-strong);font-weight:550;font-size:15px;transition:background-color 200ms ease,color 200ms ease,box-shadow 200ms ease}
+.cf-chip input:checked + span{background:var(--text);color:#fff;box-shadow:none}
+.cf-chip input:focus-visible + span{outline:2px solid var(--accent);outline-offset:3px}
+@media (hover:hover) and (pointer:fine){.cf-chip input:not(:checked) + span:hover{box-shadow:inset 0 0 0 1px rgba(10,12,16,.5)}}
+.cf-check{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;align-items:start;font-size:14.5px;color:var(--muted);line-height:1.5;cursor:pointer}
+.cf-check input{width:22px;height:22px;margin:0;accent-color:var(--accent);cursor:pointer}
+.cf-check a{color:var(--text)}
+.cf-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px}
+.cf-note{margin:0;font-size:14px;color:var(--muted);max-width:34ch}
+.cf-note a{color:var(--text)}
+.cf-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.cf-status{margin:0;font-size:14.5px;color:var(--err);font-weight:500}
+.cf-done{display:none;text-align:left;padding:clamp(8px,2vw,24px) 0}
+.cf-done .ok{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:28px;margin-bottom:24px}
+.cf-done h3{margin:0 0 12px}
+.cf-done p{margin:0 0 28px;color:var(--muted);max-width:44ch}
+.cform.is-sent .cf-body,.cform.is-sent > h3{display:none}
+.cform.is-sent .cf-done{display:block}
+.addr{font-size:clamp(1.25rem,1.8vw,1.6rem);font-weight:500;line-height:1.4;margin:0 0 10px}
+.addr-note{color:var(--muted);margin:0 0 30px;max-width:40ch}
+.contact-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.mail{display:inline-block;margin:28px 0 36px;color:var(--muted);text-decoration:none;font-size:16px}
+.mail:hover{color:var(--text)}
+.hours{background:#fff;border-radius:var(--r-img);padding:clamp(24px,3vw,36px);box-shadow:0 1px 0 var(--line)}
+.hours-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 16px;margin-bottom:18px}
+.hours-top h3{margin:0;font-size:20px;font-weight:650;font-variation-settings:"wdth" 108}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;white-space:nowrap;flex:none;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--surface)}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--dim)}
+.status.open::before{background:#1f9d57}
+.status.closed::before{background:#d6403b}
+.hours table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:12px 0;border-top:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--text);font-weight:600}
+.hours tr.today td:first-child::after{content:"Heute";margin-left:10px;font-size:12px;font-weight:600;color:var(--accent)}
+
+footer.site{border-top:1px solid var(--line);padding:40px 0 96px;color:var(--muted);font-size:14.5px;background:#fff}
+footer.site .wrap{display:grid;gap:28px}
+.foot-top{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:12px 40px;align-items:center;justify-content:space-between;padding-top:24px;border-top:1px solid var(--line)}
+footer.site nav{display:flex;gap:24px}
+footer.site a{text-decoration:none}
+footer.site a:hover{color:var(--text)}
+footer.site .brand{color:var(--text)}
+footer.site .btn-primary,footer.site .btn-primary:hover{color:#fff}
+.btn-sm{--h:44px;padding-left:18px;font-size:15px}
+.btn-sm .ico{width:32px;height:32px;font-size:16px}
+
+/* ---------- Reveal ---------- */
+html.js:not(.reduce) .rv:not(.in){opacity:0;transform:translateY(28px);filter:blur(8px)}
+.rv.in{filter:none!important}
+
+/* ---------- KI-Assistent ---------- */
+.chat-fab{position:fixed;right:20px;bottom:20px;z-index:45;display:inline-flex;align-items:center;gap:12px;padding:8px 22px 8px 8px;border:0;border-radius:999px;
+  background:var(--accent);color:#fff;font:600 15px/1.25 var(--font);font-variation-settings:"wdth" 106;cursor:pointer;text-align:left;
+  box-shadow:0 14px 40px -12px rgba(10,12,16,.55);
+  transition:transform 500ms var(--ease-out),opacity 400ms var(--ease-out),background-color 300ms ease}
+.chat-fab:active{transform:scale(.97)}
+.chat-fab .ic{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.18);display:grid;place-items:center;font-size:21px}
+.chat-fab small{display:block;font-size:12px;font-weight:450;font-variation-settings:"wdth" 100;opacity:.82;line-height:1.2}
+@media (hover:hover) and (pointer:fine){.chat-fab:hover{background:var(--accent-hi)}}
+.chat-open .chat-fab{opacity:0;pointer-events:none;transform:translateY(12px) scale(.96)}
+.chat{position:fixed;right:20px;bottom:20px;z-index:60;width:min(400px,calc(100vw - 40px));height:min(640px,calc(100dvh - 40px));
+  display:flex;flex-direction:column;background:#fff;border-radius:var(--r-img);overflow:hidden;
+  box-shadow:0 0 0 1px var(--line),0 30px 80px -24px rgba(10,12,16,.4);
+  opacity:0;visibility:hidden;transform:translateY(16px) scale(.98);transform-origin:bottom right;
+  transition:opacity 450ms var(--ease-out),transform 550ms var(--ease-out),visibility 0s linear 550ms}
+.chat-open .chat{opacity:1;visibility:visible;transform:none;transition:opacity 450ms var(--ease-out),transform 550ms var(--ease-out)}
+.chat-head{display:flex;align-items:center;gap:12px;padding:16px 16px 14px 18px;border-bottom:1px solid var(--line)}
+.chat-avatar{width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;flex:none;font-size:21px}
+.chat-head b{display:block;font-size:15px;font-weight:650;letter-spacing:-.01em}
+.chat-head small{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted)}
+.chat-head small i{width:6px;height:6px;border-radius:50%;background:#1f9d57}
+.chat-close{margin-left:auto;width:40px;height:40px;border:0;border-radius:50%;background:var(--surface);color:var(--text);display:grid;place-items:center;font-size:18px;cursor:pointer;transition:background-color 300ms ease}
+@media (hover:hover) and (pointer:fine){.chat-close:hover{background:var(--surface-2)}}
+.chat-log{flex:1;overflow-y:auto;padding:18px 16px 8px;display:flex;flex-direction:column;gap:10px;overscroll-behavior:contain}
+.msg{max-width:86%;padding:11px 14px;border-radius:18px;font-size:14.5px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+.msg.bot{align-self:flex-start;background:var(--surface);color:var(--text);border-bottom-left-radius:6px;white-space:normal}
+.msg p{margin:0}
+.msg p + p,.msg p + ul,.msg ul + p{margin-top:6px}
+.msg ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:4px}
+.msg li{position:relative;padding-left:16px}
+.msg li::before{content:"";position:absolute;left:3px;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.msg.me{align-self:flex-end;background:var(--accent);color:#fff;border-bottom-right-radius:6px}
+.msg.typing{display:flex;gap:4px;align-items:center;padding:14px 16px}
+.msg.typing i{width:6px;height:6px;border-radius:50%;background:var(--dim);animation:blink 1.2s infinite var(--ease-out)}
+.msg.typing i:nth-child(2){animation-delay:.15s}.msg.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-2px)}}
+.msg-cta{align-self:flex-start;display:flex;gap:8px;flex-wrap:wrap}
+.msg-cta a{font-size:14px;font-weight:550;padding:9px 16px;border-radius:999px;background:#fff;color:var(--text);text-decoration:none;box-shadow:inset 0 0 0 1px var(--line-strong);transition:background-color 300ms ease}
+.msg-cta a:first-child{background:var(--accent);color:#fff;box-shadow:none}
+@media (hover:hover) and (pointer:fine){.msg-cta a:hover{background:var(--surface)}.msg-cta a:first-child:hover{background:var(--accent-hi)}}
+.chips-chat{display:flex;gap:8px;flex-wrap:wrap;padding:4px 16px 10px}
+.chips-chat[hidden]{display:none}
+.chip-chat{font:450 13.5px/1.3 var(--font);padding:9px 14px;border:0;border-radius:999px;background:var(--surface);color:var(--text);cursor:pointer;text-align:left;transition:background-color 300ms ease}
+@media (hover:hover) and (pointer:fine){.chip-chat:hover{background:var(--surface-2)}}
+.chat-form{display:flex;align-items:flex-end;gap:8px;padding:10px 12px 8px;border-top:1px solid var(--line)}
+.chat-form textarea{flex:1;resize:none;font:inherit;font-size:15px;line-height:1.4;max-height:120px;padding:12px 14px;border:0;border-radius:18px;background:var(--surface);color:var(--text);outline:none;
+  box-shadow:inset 0 0 0 1px var(--line);transition:box-shadow 300ms ease,background-color 300ms ease}
+.chat-form textarea::placeholder{color:#69707a}
+.chat-form textarea:focus{background:#fff;box-shadow:inset 0 0 0 2px var(--accent)}
+.chat-send{width:46px;height:46px;border:0;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;flex:none;font-size:20px;cursor:pointer;transition:background-color 300ms ease,transform 300ms var(--ease-out),opacity 300ms ease}
+.chat-send:active{transform:scale(.95)}
+.chat-send:disabled{opacity:.35;cursor:default}
+@media (hover:hover) and (pointer:fine){.chat-send:not(:disabled):hover{background:var(--accent-hi)}}
+.chat-note{font-size:11.5px;color:var(--muted);text-align:center;padding:0 16px 12px;margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:640px){
+  .chat-fab{right:14px;bottom:14px;padding:6px 18px 6px 6px;font-size:14px}
+  .chat-fab .ic{width:38px;height:38px}
+  .chat-fab small{display:none}
+  .chat{right:0;left:0;bottom:0;width:100%;height:calc(100dvh - 56px);border-radius:var(--r-img) var(--r-img) 0 0;transform-origin:bottom center}
+  .chat-form{padding-bottom:calc(8px + env(safe-area-inset-bottom))}
+  .chat-form textarea{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){.msg.typing i{animation:none}}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .nav-links{display:none}
+  .burger{display:block}
+  .nav .btn .lbl{display:none}
+  .nav .btn{padding:0 7px}
+  .nav-right{display:flex;gap:8px;align-items:center}
+}
+@media (min-width:1081px){ .sheet{display:none} .nav-right{display:flex} }
+@media (max-width:900px){
+  .hcopy{width:calc(100% - var(--gx) * 2)}
+  .hcopy h1{font-size:clamp(2.4rem,11vw,3.6rem);margin-bottom:14px}
+  .hcopy .lead{margin-bottom:22px;font-size:1rem}
+  .li-chips{inset:auto;position:absolute;top:92px;left:var(--gx);right:var(--gx);height:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .li-chip{position:static;transform:translateY(8px) scale(.96);font-size:14px;padding:9px 14px 9px 10px}
+  .li-chip.on{transform:none}
+  .facts{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr}
+  .svc-media{display:none}
+  .svc-img-m{display:block;border-radius:var(--r-img);overflow:hidden;margin-bottom:26px;aspect-ratio:4/3}
+  .svc-img-m img{width:100%;height:100%;object-fit:cover}
+  .svc-item h3{color:var(--text)}
+  .flow-pin{height:auto;padding:clamp(96px,14vw,184px) 0 40px}
+  .flow-track{flex-direction:column;gap:56px}
+  .flow-intro{flex:none;padding:0}
+  .step{flex:none}
+  .flow-progress{display:none}
+  .owner,.contact-grid{grid-template-columns:minmax(0,1fr)}
+  .band{height:200vh}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .brand-name{display:none}
+  .btn{--h:52px;padding-left:20px;font-size:15px}
+  .btn .ico{width:36px;height:36px}
+  .cf-row{grid-template-columns:minmax(0,1fr)}
+  .hail li{grid-template-columns:92px minmax(0,1fr)}
+}
+/* Ohne Skript oder bei reduzierter Bewegung: kein Pin, Foto offen */
+html:not(.js) .li-bright,html.reduce .li-bright{clip-path:none}
+html:not(.js) .li-bar,html.reduce .li-bar{display:none}
+html:not(.js) .li-chip,html.reduce .li-chip{opacity:1;transform:translate(-50%,0)}
+@media (max-width:900px){html:not(.js) .li-chip,html.reduce .li-chip{transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .band{height:auto}
+  .band-pin{position:relative;height:100svh}
+  .band-frame{--p:1}
+  .band-copy{--q:1}
+  .rv{opacity:1!important;transform:none!important;filter:none!important}
+  .svc-media img{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#leistungen">Zum Inhalt springen</a>
+
+<header class="nav on-photo" id="nav">
+  <a class="brand" href="#top" aria-label="BCW Beulencenter Wuppertal, zum Seitenanfang">
+    <span class="mark" aria-hidden="true">BC<span class="w">w</span></span>
+    <span class="brand-name">Beulencenter<br>Wuppertal</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#lackierfrei">Lackierfrei</a></li>
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#ablauf">Ablauf</a></li>
+    <li><a href="#werkstatt">Werkstatt</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <div class="nav-right">
+    <a class="btn btn-primary" href="tel:+491722139306"><span class="lbl">0172 2139306</span><span class="ico"><i class="ph-light ph-phone"></i></span></a>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="sheet"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" aria-hidden="true">
+  <ul>
+    <li><a href="#lackierfrei">Lackierfrei</a></li>
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#ablauf">Ablauf</a></li>
+    <li><a href="#werkstatt">Werkstatt</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <div class="sheet-meta">
+    Linderhauser Straße 38, 42279 Wuppertal<br>
+    <a href="mailto:info@beulencenter.de">info@beulencenter.de</a>
+  </div>
+</div>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-label="Einstieg">
+
+    <!-- Lichtbalken: Die Lampe fährt über das Auto, hinter ihr wird es hell -->
+    <div class="hv">
+      <div class="li-dim"><div class="hphoto"><img src="images/showroom-bcw.webp" width="2560" height="1920" alt="Schwarzer Kombi mit BCW-Beschriftung in der Werkstatthalle" fetchpriority="high"></div></div>
+      <div class="li-bright"><div class="hphoto"><img src="images/showroom-bcw.webp" width="2560" height="1920" alt="" fetchpriority="high"></div></div>
+      <div class="hscrim"></div>
+      <div class="li-bar" id="liBar" aria-hidden="true"></div>
+      <div class="li-chips" aria-hidden="true">
+        <span class="li-chip" style="--x:22;--y:30" data-x="22"><i class="ph-light ph-hammer"></i>Dellen &amp; Beulen</span>
+        <span class="li-chip" style="--x:42;--y:20" data-x="42"><i class="ph-light ph-paint-brush"></i>Smart-Repair</span>
+        <span class="li-chip" style="--x:62;--y:32" data-x="62"><i class="ph-light ph-car-profile"></i>Steinschlag</span>
+        <span class="li-chip" style="--x:80;--y:22" data-x="80"><i class="ph-light ph-sparkle"></i>Aufbereitung</span>
+      </div>
+      <div class="hcopy photo">
+        <h1 class="display">
+          <span class="line"><span>Dellen raus.</span></span>
+          <span class="line"><span>Originallack <span class="accent">bleibt.</span></span></span>
+        </h1>
+        <p class="lead">Ausbeulen ohne Lackieren, Smart-Repair, Steinschlag und Aufbereitung in Wuppertal.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+491722139306">Jetzt anrufen<span class="ico"><i class="ph-light ph-phone"></i></span></a>
+          <a class="btn btn-ghost" href="#anfrage">Anfrage senden<span class="ico"><i class="ph-light ph-arrow-down"></i></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LACKIERFREI -->
+  <section class="sec" id="lackierfrei">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="display h2 rv">Lackierfrei ausbeulen.</h2>
+        <p class="lead rv">Mit einer speziellen Lampe lokalisieren wir die Delle genau. Dann massieren wir sie mit Spezialwerkzeug von innen heraus, bis sie vollständig verschwunden ist.</p>
+      </div>
+      <figure class="pdr-figure" id="pdrFigure">
+        <img src="images/lampe-dach.webp" width="2400" height="1800" loading="lazy" decoding="async" alt="Ausbeul-Lampe über einem roten Autodach, die Lichtlinien zeigen die Delle im Lack">
+      </figure>
+      <ul class="facts" id="facts">
+        <li class="fact">
+          <svg viewBox="0 0 1000 30" preserveAspectRatio="none" aria-hidden="true"><path/></svg>
+          <h3 class="display">Bis zu 65 % günstiger.</h3>
+          <p>Kein Spachtel, keine Grundierung, kein neuer Lack.</p>
+        </li>
+        <li class="fact">
+          <svg viewBox="0 0 1000 30" preserveAspectRatio="none" aria-hidden="true"><path/></svg>
+          <h3 class="display">Originallack bleibt.</h3>
+          <p>Keine Farbunterschiede zu den übrigen Teilen.</p>
+        </li>
+        <li class="fact">
+          <svg viewBox="0 0 1000 30" preserveAspectRatio="none" aria-hidden="true"><path/></svg>
+          <h3 class="display">Keine Wertminderung.</h3>
+          <p>Der Wagen bleibt im Originalzustand.</p>
+        </li>
+        <li class="fact">
+          <svg viewBox="0 0 1000 30" preserveAspectRatio="none" aria-hidden="true"><path/></svg>
+          <h3 class="display">Kürzere Reparaturzeiten.</h3>
+          <p>Smart-Repair ist nach höchstens neun Stunden ausgehärtet.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN -->
+  <section class="sec" id="leistungen" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="display h2 rv">Leistungen.</h2>
+      </div>
+      <div class="svc">
+        <ol class="svc-list" id="svcList">
+          <li class="svc-item on" data-i="0">
+            <figure class="svc-img-m"><img src="images/reflexion-rot.webp" width="1080" height="1920" loading="lazy" decoding="async" alt="Lichtreflexe auf rotem Lack"></figure>
+            <h3 class="display">Dellen &amp; Beulen</h3>
+            <p>Parkrempler, Türkanten, Hagel. Wir drücken die Delle von innen heraus, kontrolliert unter der Lampe.</p>
+            <ul class="chips"><li>Parkdellen</li><li>Hagelschäden</li><li>Lackierfrei</li></ul>
+          </li>
+          <li class="svc-item" data-i="1">
+            <figure class="svc-img-m"><img src="images/transporter-tuer.webp" width="1800" height="2400" loading="lazy" decoding="async" alt="Seitentür eines weißen Transporters"></figure>
+            <h3 class="display">Smart-Repair</h3>
+            <p>Kratzer und kleine Lackschäden, ohne Teile abzubauen. Nach höchstens neun Stunden ausgehärtet, danach geht es direkt in die Waschstraße.</p>
+            <ul class="chips"><li>Lackkratzer</li><li>Kleine Lackschäden</li><li>Ohne Demontage</li></ul>
+          </li>
+          <li class="svc-item" data-i="2">
+            <figure class="svc-img-m"><img src="images/amg-front.webp" width="1666" height="1982" loading="lazy" decoding="async" alt="Grüner Mercedes-AMG in der Werkstatt, Frontansicht"></figure>
+            <h3 class="display">Autoglas &amp; Steinschlag</h3>
+            <p>Wir prüfen zuerst, ob die Scheibe repariert werden kann. Wenn nicht, verglasen wir neu, für PKW, LKW, Bus und Sonderfahrzeuge.</p>
+            <ul class="chips"><li>Steinschlag</li><li>Windschutzscheibe</li><li>Seiten- &amp; Heckscheibe</li></ul>
+          </li>
+          <li class="svc-item" data-i="3">
+            <figure class="svc-img-m"><img src="images/halle-zwei-fahrzeuge.webp" width="2000" height="1500" loading="lazy" decoding="async" alt="Zwei glänzende schwarze Fahrzeuge in der Halle"></figure>
+            <h3 class="display">Aufbereitung</h3>
+            <p>Innen und außen, von der Motorraumwäsche bis zur Lederpflege. Gerüche neutralisieren wir mit dem Ozongenerator.</p>
+            <ul class="chips"><li>Politur &amp; Versiegelung</li><li>Innenraum</li><li>Tierhaare</li><li>Ozon</li></ul>
+          </li>
+        </ol>
+        <div class="svc-media" id="svcMedia" aria-hidden="true">
+          <img class="first" src="images/reflexion-rot.webp" width="1080" height="1920" loading="lazy" decoding="async" alt="">
+          <img src="images/transporter-tuer.webp" width="1800" height="2400" loading="lazy" decoding="async" alt="">
+          <img src="images/amg-front.webp" width="1666" height="1982" loading="lazy" decoding="async" alt="">
+          <img src="images/halle-zwei-fahrzeuge.webp" width="2000" height="1500" loading="lazy" decoding="async" alt="">
+        </div>
+      </div>
+      <div class="svc-extra rv">
+        <span><i class="ph-light ph-car-profile"></i>Hol- &amp; Bringservice</span>
+        <span><i class="ph-light ph-map-pin-line"></i>Vor-Ort-Service</span>
+        <span><i class="ph-light ph-chat-circle-text"></i>Kostenlose Beratung</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section class="flow" id="ablauf">
+    <div class="flow-pin" id="flowPin">
+      <div class="flow-track" id="flowTrack">
+        <div class="flow-intro">
+          <h2 class="display h2">So läuft es ab.</h2>
+          <p class="lead">Vom ersten Foto bis zur Abholung.</p>
+        </div>
+        <article class="step">
+          <figure><img src="images/fassade.webp" width="2048" height="1536" loading="lazy" decoding="async" alt="Fassade des Beulencenter Wuppertal mit BCW-Schriftzug"></figure>
+          <h3 class="display">Vorbeikommen</h3>
+          <p>Kommen Sie vorbei oder schicken Sie ein Foto der Delle. Wir sagen Ihnen, ob sie sich lackierfrei entfernen lässt.</p>
+        </article>
+        <article class="step">
+          <figure><img src="images/werkstatt-golf.webp" width="1800" height="2400" loading="lazy" decoding="async" alt="Schwarzer Golf auf der Arbeitsfläche in der Werkstatt"></figure>
+          <h3 class="display">Termin</h3>
+          <p>Sie bekommen Preis und Termin. Auf Wunsch holen wir das Auto ab oder kommen zu Ihnen.</p>
+        </article>
+        <article class="step">
+          <figure><img src="images/motorhaube-rot.webp" width="1700" height="3020" loading="lazy" decoding="async" alt="Lichtlinien auf einer roten Motorhaube"></figure>
+          <h3 class="display">Ausbeulen</h3>
+          <p>Unter der Lampe arbeiten wir die Delle von innen heraus, bis sich das Licht wieder gerade spiegelt.</p>
+        </article>
+        <article class="step">
+          <figure><img src="images/amg-heck.webp" width="1574" height="2100" loading="lazy" decoding="async" alt="Grüner Mercedes-AMG von hinten vor dem Werkstatttor"></figure>
+          <h3 class="display">Abholen</h3>
+          <p>Viele Dellen sind in wenigen Stunden erledigt. Sie holen Ihr Auto mit Originallack wieder ab.</p>
+        </article>
+      </div>
+      <div class="flow-progress" aria-hidden="true"><i id="flowBar"></i></div>
+    </div>
+  </section>
+
+  <!-- WERKSTATT -->
+  <section class="band" id="werkstatt" aria-label="Die Werkstatt">
+    <div class="band-pin">
+      <div class="band-frame" id="bandFrame">
+        <img src="images/halle-zwei-fahrzeuge.webp" width="2000" height="1500" loading="lazy" decoding="async" alt="Zwei glänzende schwarze Fahrzeuge in der hellen Werkstatthalle">
+      </div>
+      <div class="band-copy" id="bandCopy">
+        <div class="wrap">
+          <h2 class="display h2">Die Werkstatt.</h2>
+          <p>Linderhauser Straße 38 in Wuppertal. Die Einfahrt liegt zwischen BestPrice Autohaus und Manhart.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INHABER -->
+  <section class="sec" id="inhaber">
+    <div class="wrap owner">
+      <div>
+        <h2 class="display h2 rv">Giuseppe Buetta.</h2>
+        <p class="lead rv">Inhaber. Vor der eigenen Werkstatt jahrelang als Dellentechniker und Fahrzeugaufbereiter angestellt.</p>
+      </div>
+      <div class="rv">
+        <p class="hail-title">Einsätze in der Hagelsaison</p>
+        <ul class="hail">
+          <li><span class="yr num">2012</span><span>Lackiererei Winterthur (Schweiz), Ford-Autohaus Ulm, BMW Zwickau-Chemnitz</span></li>
+          <li><span class="yr num">2011/12</span><span>VW-, Skoda- &amp; Audi-Autohaus Sigmaringen</span></li>
+          <li><span class="yr num">2010/11</span><span>Renault-Werk (Frankreich), VW-Autohaus Bochum</span></li>
+          <li><span class="yr num">2009</span><span>Mercedes-Autohaus Neuss</span></li>
+          <li><span class="yr num">2008</span><span>VW Krefeld, Mercedes Sindelfingen, Böblingen und Göppingen</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="sec sec-grey" id="kontakt">
+    <div class="wrap">
+      <h2 class="display h2 contact-title rv">Kontakt.</h2>
+      <div class="contact-grid">
+        <form class="cform rv" id="anfrage" novalidate data-endpoint="">
+          <h3 class="display">Ihre Anfrage.</h3>
+          <div class="cf-body">
+            <fieldset class="cf-field" id="f-anliegen" aria-describedby="err-anliegen">
+              <legend>Worum geht es?</legend>
+              <div class="cf-chips">
+                <label class="cf-chip"><input type="radio" name="anliegen" value="Delle oder Beule"><span>Delle oder Beule</span></label>
+                <label class="cf-chip"><input type="radio" name="anliegen" value="Kratzer"><span>Kratzer</span></label>
+                <label class="cf-chip"><input type="radio" name="anliegen" value="Steinschlag oder Autoglas"><span>Steinschlag oder Autoglas</span></label>
+                <label class="cf-chip"><input type="radio" name="anliegen" value="Aufbereitung"><span>Aufbereitung</span></label>
+                <label class="cf-chip"><input type="radio" name="anliegen" value="Etwas anderes"><span>Etwas anderes</span></label>
+              </div>
+              <p class="cf-err" id="err-anliegen" hidden></p>
+            </fieldset>
+            <div class="cf-row">
+              <div class="cf-field">
+                <label for="cf-name">Name</label>
+                <input class="cf-input" id="cf-name" name="kontaktname" type="text" autocomplete="name" aria-describedby="err-name" required>
+                <p class="cf-err" id="err-name" hidden></p>
+              </div>
+              <div class="cf-field">
+                <label for="cf-tel">Telefon</label>
+                <input class="cf-input" id="cf-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="err-tel" required>
+                <p class="cf-err" id="err-tel" hidden></p>
+              </div>
+            </div>
+            <div class="cf-row">
+              <div class="cf-field">
+                <label for="cf-mail">E-Mail <small>(optional)</small></label>
+                <input class="cf-input" id="cf-mail" name="email" type="email" autocomplete="email" aria-describedby="err-mail">
+                <p class="cf-err" id="err-mail" hidden></p>
+              </div>
+              <div class="cf-field">
+                <label for="cf-car">Fahrzeug <small>(optional)</small></label>
+                <input class="cf-input" id="cf-car" name="fahrzeug" type="text" placeholder="z. B. VW Golf 7, schwarz" autocomplete="off">
+              </div>
+            </div>
+            <div class="cf-field">
+              <label for="cf-msg">Nachricht <small>(optional)</small></label>
+              <textarea class="cf-input" id="cf-msg" name="nachricht" rows="4"></textarea>
+            </div>
+            <div class="cf-field" id="f-datenschutz">
+              <label class="cf-check">
+                <input type="checkbox" name="datenschutz" aria-describedby="err-ds" required>
+                <span>Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden. Mehr in der <a href="#">Datenschutzerklärung [Platzhalter]</a>.</span>
+              </label>
+              <p class="cf-err" id="err-ds" hidden></p>
+            </div>
+            <div class="cf-hp" aria-hidden="true"><label>Bitte leer lassen<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+            <div class="cf-actions">
+              <button class="btn btn-primary" type="submit" id="cfSubmit"><span class="lbl">Anfrage senden</span><span class="ico"><i class="ph-light ph-arrow-right"></i></span></button>
+              <p class="cf-note">Ein Foto der Delle hilft bei der Einschätzung. Schicken Sie es gern an <a href="mailto:info@beulencenter.de">info@beulencenter.de</a>.</p>
+            </div>
+            <p class="cf-status" id="cfStatus" role="alert" hidden></p>
+          </div>
+          <div class="cf-done" role="status" aria-live="polite">
+            <div class="ok"><i class="ph-fill ph-check"></i></div>
+            <h3 class="display" id="cfDoneTitle">Danke.</h3>
+            <p id="cfDoneText">Wir melden uns so schnell wie möglich bei Ihnen.</p>
+            <button class="btn btn-ghost" type="button" id="cfReset">Neue Anfrage<span class="ico"><i class="ph-light ph-arrow-counter-clockwise"></i></span></button>
+          </div>
+        </form>
+        <div class="contact-side rv">
+          <p class="addr">BCW Beulencenter Wuppertal<br>Linderhauser Straße 38<br>42279 Wuppertal</p>
+          <p class="addr-note">Ansprechpartner: Giuseppe Buetta. Einfahrt zwischen BestPrice Autohaus und Manhart.</p>
+          <div class="contact-ctas">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Linderhauser+Stra%C3%9Fe+38%2C+42279+Wuppertal" target="_blank" rel="noopener">Route planen<span class="ico"><i class="ph-light ph-navigation-arrow"></i></span></a>
+          </div>
+          <a class="mail" href="mailto:info@beulencenter.de">info@beulencenter.de</a>
+          <div class="hours">
+            <div class="hours-top">
+              <h3>Öffnungszeiten</h3>
+              <span class="status" id="status">Öffnungszeiten</span>
+            </div>
+            <table>
+              <tbody id="hoursBody">
+                <tr data-day="1" data-open="09:00" data-close="18:00"><td>Montag</td><td>09:00 - 18:00</td></tr>
+                <tr data-day="2" data-open="09:00" data-close="18:00"><td>Dienstag</td><td>09:00 - 18:00</td></tr>
+                <tr data-day="3" data-open="09:00" data-close="15:00"><td>Mittwoch</td><td>09:00 - 15:00</td></tr>
+                <tr data-day="4" data-open="09:00" data-close="18:00"><td>Donnerstag</td><td>09:00 - 18:00</td></tr>
+                <tr data-day="5" data-open="09:00" data-close="18:00"><td>Freitag</td><td>09:00 - 18:00</td></tr>
+                <tr data-day="6"><td>Samstag</td><td>Geschlossen</td></tr>
+                <tr data-day="0"><td>Sonntag</td><td>Geschlossen</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="#top" aria-label="Zum Seitenanfang"><span class="mark" aria-hidden="true">BC<span class="w">w</span></span><span class="brand-name">Beulencenter<br>Wuppertal</span></a>
+      <a class="btn btn-primary btn-sm" href="tel:+491722139306">0172 2139306<span class="ico"><i class="ph-light ph-phone"></i></span></a>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 BCW Beulencenter Wuppertal</span>
+      <nav aria-label="Rechtliches"><a href="#">Impressum [Platzhalter]</a><a href="#">Datenschutz [Platzhalter]</a></nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= KI-Assistent ================= -->
+<button class="chat-fab" id="chatFab" type="button" aria-controls="chat" aria-expanded="false">
+  <span class="ic"><i class="ph-light ph-chat-circle-dots"></i></span>
+  <span><b>Fragen?</b><small>KI-Assistent, rund um die Uhr</small></span>
+</button>
+<section class="chat" id="chat" role="dialog" aria-modal="false" aria-label="KI-Assistent von BCW Beulencenter Wuppertal" data-lenis-prevent>
+  <header class="chat-head">
+    <span class="chat-avatar"><i class="ph-light ph-chat-circle-dots"></i></span>
+    <div><b>BCW Assistent</b><small><i></i>KI · antwortet sofort</small></div>
+    <button class="chat-close" id="chatClose" type="button" aria-label="Chat schließen"><i class="ph-light ph-x"></i></button>
+  </header>
+  <div class="chat-log" id="chatLog" aria-live="polite" data-lenis-prevent></div>
+  <div class="chips-chat" id="chatChips">
+    <button class="chip-chat" type="button">Wann haben Sie geöffnet?</button>
+    <button class="chip-chat" type="button">Kann man Dellen ohne Lackieren entfernen?</button>
+    <button class="chip-chat" type="button">Reparieren Sie auch Steinschläge?</button>
+    <button class="chip-chat" type="button">Wie schicke ich eine Anfrage?</button>
+  </div>
+  <form class="chat-form" id="chatForm">
+    <label class="sr" for="chatInput">Ihre Frage</label>
+    <textarea id="chatInput" rows="1" maxlength="1000" placeholder="Ihre Frage …"></textarea>
+    <button class="chat-send" id="chatSend" type="submit" aria-label="Senden" disabled><i class="ph-light ph-arrow-up"></i></button>
+  </form>
+  <p class="chat-note">Automatische Antworten ohne Gewähr. Bitte keine sensiblen Daten eingeben.</p>
+</section>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.documentElement;
+  const reduce = root.classList.contains('reduce');
+  const hasGsap = !!(window.gsap && window.ScrollTrigger);
+  if (!hasGsap) root.classList.remove('js');
+  const $ = (id) => document.getElementById(id);
+  const clamp01 = (v) => Math.max(0, Math.min(1, v));
+  const seg = (p, a, b) => clamp01((p - a) / (b - a));
+  const ease = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+  const hero = $('hero'), nav = $('nav');
+
+  /* ---------- Öffnungszeiten: heute + Status ---------- */
+  (() => {
+    const now = new Date(), d = now.getDay(), mins = now.getHours() * 60 + now.getMinutes();
+    const toM = (s) => { const [h, m] = s.split(':').map(Number); return h * 60 + m; };
+    const row = document.querySelector(`#hoursBody tr[data-day="${d}"]`);
+    const st = $('status');
+    if (row) row.classList.add('today');
+    if (row && row.dataset.open && mins >= toM(row.dataset.open) && mins < toM(row.dataset.close)) {
+      st.textContent = `Geöffnet bis ${row.dataset.close}`; st.classList.add('open');
+    } else {
+      st.textContent = 'Gerade geschlossen'; st.classList.add('closed');
+    }
+  })();
+
+  /* ---------- Menü ---------- */
+  const burger = $('burger'), sheet = $('sheet');
+  const setMenu = (open) => {
+    document.body.classList.toggle('menu-open', open);
+    burger.setAttribute('aria-expanded', open); burger.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    sheet.setAttribute('aria-hidden', !open);
+    if (window.lenisInst) open ? lenisInst.stop() : lenisInst.start();
+  };
+  burger.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+
+  /* ---------- Kontaktformular ---------- */
+  (() => {
+    const form = $('anfrage'), btn = $('cfSubmit'), status = $('cfStatus');
+    const el = form.elements;
+    const MAIL = 'info@beulencenter.de';
+    const rules = {
+      anliegen: { err: 'err-anliegen', box: () => $('f-anliegen'), focus: () => form.querySelector('input[name=anliegen]'),
+        test: () => el.anliegen.value ? '' : 'Bitte wählen Sie, worum es geht.' },
+      kontaktname: { err: 'err-name', box: () => el.kontaktname, focus: () => el.kontaktname,
+        test: () => el.kontaktname.value.trim().length >= 2 ? '' : 'Bitte geben Sie Ihren Namen an.' },
+      telefon: { err: 'err-tel', box: () => el.telefon, focus: () => el.telefon,
+        test: () => /^[+()\d\s\/.\-]{6,}$/.test(el.telefon.value.trim()) ? '' : 'Bitte geben Sie eine Telefonnummer an, unter der wir Sie erreichen.' },
+      email: { err: 'err-mail', box: () => el.email, focus: () => el.email,
+        test: () => { const v = el.email.value.trim(); return !v || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? '' : 'Bitte prüfen Sie die E-Mail-Adresse.'; } },
+      datenschutz: { err: 'err-ds', box: () => el.datenschutz, focus: () => el.datenschutz,
+        test: () => el.datenschutz.checked ? '' : 'Bitte stimmen Sie der Verarbeitung Ihrer Angaben zu.' }
+    };
+    const show = (k, msg) => {
+      const r = rules[k], e = $(r.err);
+      e.textContent = msg; e.hidden = !msg;
+      r.box().setAttribute('aria-invalid', msg ? 'true' : 'false');
+    };
+    const validate = () => { let first = null; for (const k in rules) { const m = rules[k].test(); show(k, m); if (m && !first) first = k; } return first; };
+    const recheck = (e) => { const k = e.target.name; if (rules[k] && !$(rules[k].err).hidden) show(k, rules[k].test()); };
+    form.addEventListener('input', recheck); form.addEventListener('change', recheck);
+
+    const done = (title, text) => { $('cfDoneTitle').textContent = title; $('cfDoneText').textContent = text; form.classList.add('is-sent'); form.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' }); };
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); status.hidden = true;
+      const bad = validate();
+      if (bad) { rules[bad].focus().focus(); return; }
+      if (el.website.value) { done('Danke.', 'Wir melden uns so schnell wie möglich bei Ihnen.'); return; }
+      const data = { anliegen: el.anliegen.value, name: el.kontaktname.value.trim(), telefon: el.telefon.value.trim(),
+        email: el.email.value.trim(), fahrzeug: el.fahrzeug.value.trim(), nachricht: el.nachricht.value.trim() };
+      const endpoint = form.dataset.endpoint;
+      if (endpoint) {
+        btn.disabled = true; btn.querySelector('.lbl').textContent = 'Wird gesendet';
+        try {
+          const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) });
+          if (!res.ok) throw new Error(res.status);
+          done('Danke, ' + data.name.split(' ')[0] + '.', 'Wir melden uns so schnell wie möglich bei Ihnen, in der Regel telefonisch.');
+        } catch (err) {
+          status.textContent = 'Das Senden hat nicht geklappt. Bitte rufen Sie uns an: 0172 2139306.'; status.hidden = false;
+        } finally { btn.disabled = false; btn.querySelector('.lbl').textContent = 'Anfrage senden'; }
+      } else {
+        const body = `Anliegen: ${data.anliegen}\nName: ${data.name}\nTelefon: ${data.telefon}\nE-Mail: ${data.email || '-'}\nFahrzeug: ${data.fahrzeug || '-'}\n\nNachricht:\n${data.nachricht || '-'}`;
+        window.location.href = `mailto:${MAIL}?subject=${encodeURIComponent('Anfrage Beulencenter: ' + data.anliegen)}&body=${encodeURIComponent(body)}`;
+        done('Fast geschafft.', 'Ihr E-Mail-Programm hat sich mit der vorbereiteten Nachricht geöffnet. Bitte dort noch auf Senden klicken.');
+      }
+    });
+    $('cfReset').addEventListener('click', () => { form.reset(); form.classList.remove('is-sent'); for (const k in rules) show(k, ''); });
+  })();
+
+  /* ---------- Hero ---------- */
+  let mob = innerWidth < 900;
+  const ptr = { x: 0, y: 0, tx: 0, ty: 0 };
+
+  function initLicht() {
+    const chips = [...hero.querySelectorAll('.li-chip')], bar = $('liBar');
+    const st = { intro: 0, scroll: 0, hover: 0, ht: 0 };
+    const apply = () => {
+      const lp = Math.max(st.intro, st.scroll, st.hover);
+      hero.style.setProperty('--lp', lp.toFixed(4));
+      bar.style.setProperty('--bo', (1 - seg(lp, 0.97, 1)).toFixed(3));
+      chips.forEach((c) => c.classList.toggle('on', lp * 100 >= +c.dataset.x - 3));
+    };
+    const render = (p) => { st.scroll = seg(p, 0, 0.88); apply(); };
+    if (reduce || !hasGsap) { st.intro = 1; apply(); return { render, len: () => 0, photoUntil: 1 }; }
+    gsap.to(st, { intro: 0.17, duration: 2.2, ease: 'expo.out', delay: 0.5, onUpdate: apply });
+    if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      hero.addEventListener('pointermove', (e) => { const r = hero.getBoundingClientRect(); st.ht = (e.clientX - r.left) / r.width; });
+      hero.addEventListener('pointerleave', () => { st.ht = 0; });
+      gsap.ticker.add(() => {
+        const d = st.ht - st.hover;
+        if (Math.abs(d) < 0.0008) return;
+        st.hover += d * (st.ht > 0 ? 0.14 : 0.06); apply();
+      });
+    }
+    apply();
+    return { render, len: () => innerHeight * (mob ? 1.9 : 2.2), photoUntil: 0.985 };
+  }
+
+  const api = initLicht();
+
+  if (reduce || !hasGsap) {
+    if (!hasGsap) nav.classList.remove('on-photo');
+    return;
+  }
+
+  /* ---------- GSAP + Lenis ---------- */
+  gsap.registerPlugin(ScrollTrigger);
+  const lenis = new Lenis({ lerp: 0.1, wheelMultiplier: 1 });
+  window.lenisInst = lenis;
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add((t) => lenis.raf(t * 1000));
+  gsap.ticker.lagSmoothing(0);
+  document.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener('click', (e) => {
+    const id = a.getAttribute('href');
+    e.preventDefault(); setMenu(false);
+    if (id.length < 2) return;                      /* Platzhalter-Links (Impressum, Datenschutz) */
+    if (id === '#top') { lenis.scrollTo(0, { duration: 1.4 }); return; }
+    const el = document.querySelector(id); if (!el) return;
+    lenis.scrollTo(el, { offset: id === '#ablauf' || id === '#werkstatt' ? 0 : -20, duration: 1.4 });
+  }));
+
+  // Intro der Headline
+  gsap.from('.hcopy h1 .line > span', { yPercent: 105, duration: 1.1, ease: 'expo.out', stagger: 0.08, delay: 0.1 });
+  gsap.from(['.hcopy .lead', '.hcopy .hero-ctas'], { opacity: 0, y: 18, filter: 'blur(6px)', duration: 1, ease: 'expo.out', stagger: 0.07, delay: 0.4, clearProps: 'filter,transform' });
+  gsap.from('.hphoto img', { scale: 1.14, duration: 2.4, ease: 'expo.out' });
+
+  // Scroll treibt p von 0 bis 1, Hero bleibt stehen
+  const heroState = { p: 0 };
+  const heroTween = gsap.to(heroState, { p: 1, ease: 'none', paused: true, onUpdate: () => api.render(heroState.p) });
+  const heroST = ScrollTrigger.create({ trigger: hero, start: 'top top', end: () => '+=' + Math.round(api.len()),
+    pin: true, anticipatePin: 1, scrub: 0.6, animation: heroTween,
+    onUpdate: (s) => nav.classList.toggle('on-photo', s.progress < api.photoUntil) });
+
+  // Zeiger: Foto schwebt leicht mit
+  if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    hero.addEventListener('pointermove', (e) => { const r = hero.getBoundingClientRect(); ptr.tx = (e.clientX - r.left) / r.width - 0.5; ptr.ty = (e.clientY - r.top) / r.height - 0.5; });
+    hero.addEventListener('pointerleave', () => { ptr.tx = 0; ptr.ty = 0; });
+    gsap.ticker.add(() => {
+      const dx = ptr.tx - ptr.x, dy = ptr.ty - ptr.y;
+      if (Math.abs(dx) + Math.abs(dy) < 0.0005) return;
+      ptr.x += dx * 0.08; ptr.y += dy * 0.08;
+      hero.style.setProperty('--px', ptr.x.toFixed(4)); hero.style.setProperty('--py', ptr.y.toFixed(4));
+    });
+  }
+
+  // Navigation: Glas ab der ersten Bewegung, nach dem Hero beim Runterscrollen ausblenden
+  ScrollTrigger.create({ start: 40, end: 'max', onUpdate: (s) => {
+    nav.classList.toggle('scrolled', s.scroll() > 40);
+    if (!document.body.classList.contains('menu-open')) nav.classList.toggle('hide', s.direction === 1 && s.scroll() > heroST.end + 400);
+  } });
+
+  // Lackierfrei: Bild öffnet sich aus der Mitte
+  const fig = $('pdrFigure');
+  gsap.fromTo(fig, { '--cx': '14%', '--cy': '18%', '--s': 1.18 }, { '--cx': '0%', '--cy': '0%', '--s': 1, ease: 'none',
+    scrollTrigger: { trigger: fig, start: 'top 95%', end: 'center 55%', scrub: 0.6 } });
+
+  // Fakten: jede Lichtlinie hat eine Delle, die beim Lesen gerade wird
+  document.querySelectorAll('.fact').forEach((li, idx) => {
+    const path = li.querySelector('path'); const c = 0.22 + ((idx * 0.37) % 0.6);
+    const st = { a: 1 };
+    const draw = () => {
+      let d = '';
+      for (let x = 0; x <= 1000; x += 10) {
+        const z = (x / 1000 - c) / 0.07, g = Math.exp(-z * z);
+        const y = 15 + st.a * (g * 11 * Math.sin(z * 2.2 + 0.9) - g * 4);
+        d += (x ? 'L' : 'M') + x + ' ' + y.toFixed(2);
+      }
+      path.setAttribute('d', d);
+    };
+    draw();
+    gsap.fromTo(li, { '--o': 0.22 }, { '--o': 1, ease: 'none', scrollTrigger: { trigger: li, start: 'top 92%', end: 'top 58%', scrub: 0.5 } });
+    gsap.to(st, { a: 0, ease: 'power2.inOut', onUpdate: draw, scrollTrigger: { trigger: li, start: 'top 85%', end: 'top 50%', scrub: 0.6 } });
+  });
+
+  // Leistungen: Bild wechselt per Wischblende
+  const mm = gsap.matchMedia();
+  mm.add('(min-width: 901px)', () => {
+    const imgs = [...document.querySelectorAll('#svcMedia img')];
+    const items = [...document.querySelectorAll('.svc-item')];
+    let cur = 0, z = 1;
+    const show = (i) => {
+      if (i === cur) return;
+      items.forEach((it, k) => it.classList.toggle('on', k === i));
+      const img = imgs[i]; img.style.zIndex = ++z;
+      gsap.fromTo(img, { clipPath: i > cur ? 'inset(100% 0% 0% 0%)' : 'inset(0% 0% 100% 0%)', scale: 1.12 },
+        { clipPath: 'inset(0% 0% 0% 0%)', scale: 1, duration: 1, ease: 'expo.out', overwrite: true });
+      cur = i;
+    };
+    items.forEach((it, i) => ScrollTrigger.create({ trigger: it, start: 'top 55%', end: 'bottom 55%', onToggle: (s) => s.isActive && show(i) }));
+    return () => items.forEach((it) => it.classList.remove('on'));
+  });
+
+  // Ablauf: horizontal
+  mm.add('(min-width: 901px)', () => {
+    const track = $('flowTrack');
+    const dist = () => track.scrollWidth - window.innerWidth;
+    const tw = gsap.to(track, { x: () => -dist(), ease: 'none',
+      scrollTrigger: { trigger: '#flowPin', start: 'top top', end: () => '+=' + dist(), pin: true, scrub: 1, invalidateOnRefresh: true,
+        onUpdate: (s) => gsap.set('#flowBar', { scaleX: s.progress }) } });
+    track.querySelectorAll('.step img').forEach((img) => {
+      gsap.fromTo(img, { scale: 1.18, xPercent: -6 }, { scale: 1.02, xPercent: 6, ease: 'none',
+        scrollTrigger: { trigger: img.parentElement, containerAnimation: tw, start: 'left right', end: 'right left', scrub: true } });
+    });
+  });
+
+  // Werkstatt: Bild wächst zum Vollbild
+  const band = $('werkstatt');
+  ScrollTrigger.create({ trigger: band, start: 'top top', end: 'bottom bottom', scrub: 0.6, onUpdate: (s) => {
+    const p = Math.min(1, s.progress / 0.7), q = Math.max(0, Math.min(1, (s.progress - 0.55) / 0.3));
+    band.style.setProperty('--p', p.toFixed(4)); band.style.setProperty('--q', q.toFixed(4));
+  } });
+
+  // Allgemeine Einblendungen
+  ScrollTrigger.batch('.rv', { start: 'top 88%', once: true, onEnter: (els) => gsap.to(els, {
+    opacity: 1, y: 0, filter: 'blur(0px)', duration: 1, ease: 'expo.out', stagger: 0.08,
+    onComplete: () => els.forEach((el) => el.classList.add('in')) }) });
+
+  window.addEventListener('resize', () => { mob = innerWidth < 900; });
+  window.addEventListener('load', () => ScrollTrigger.refresh());
+});
+</script>
+<script>
+/* ================= KI-Assistent ================= */
+(() => {
+  const fab = document.getElementById("chatFab"), panel = document.getElementById("chat"), log = document.getElementById("chatLog");
+  const form = document.getElementById("chatForm"), input = document.getElementById("chatInput"), send = document.getElementById("chatSend");
+  const chips = document.getElementById("chatChips");
+  const history = [];
+  let busy = false, greeted = false;
+
+  // Antworten, falls der KI-Dienst nicht erreichbar ist (z. B. lokale Vorschau ohne Schlüssel)
+  const FAQ = [
+    [/öffnungs|geöffnet|offen|uhrzeit|wann.*(auf|da)|samstag|sonntag|mittwoch/i, "Wir sind Montag, Dienstag, Donnerstag und Freitag von 09:00 bis 18:00 Uhr für Sie da, mittwochs von 09:00 bis 15:00 Uhr. Am Wochenende ist geschlossen."],
+    [/termin|anfrage|buchen|vereinbar|vorbeikommen|formular|foto/i, "Schreiben Sie uns direkt unten im Formular „Ihre Anfrage“ oder rufen Sie an unter 0172 2139306. Ein Foto der Delle per E-Mail an info@beulencenter.de hilft bei der Einschätzung."],
+    [/lackierfrei|ohne lack|delle|beule|hagel|park|ausbeul/i, "Ja, Dellen und Beulen entfernen wir lackierfrei: Mit einer Spezialampe lokalisieren wir die Delle und drücken sie von innen heraus, ohne Spachtel und ohne Neulackierung. Der Originallack bleibt erhalten. Ob es bei Ihrer Delle klappt, sehen wir am Fahrzeug oder auf einem Foto."],
+    [/kratzer|smart|lackschaden|lack/i, "Kratzer und kleine Lackschäden beseitigen wir mit Smart-Repair, ohne Teile abzubauen. Nach höchstens neun Stunden ist alles ausgehärtet und Sie können direkt in die Waschstraße."],
+    [/steinschlag|scheibe|glas|windschutz/i, "Bei Steinschlag prüfen wir zuerst, ob die Scheibe repariert werden kann. Wenn nicht, verglasen wir neu, für PKW, LKW, Bus und Sonderfahrzeuge."],
+    [/aufbereit|polit|reinig|leder|polster|geruch|ozon|tierhaar|innenraum|versieg|wäsche/i, "Bei der Aufbereitung kümmern wir uns um Innen und Außen, von der Motorraumwäsche bis zur Lederpflege. Gerüche neutralisieren wir mit einem Ozongenerator."],
+    [/preis|kost|teuer|günstig|angebot|€|euro/i, "Preise hängen von Größe und Lage der Delle ab, deshalb nennen wir sie nach Ansicht des Schadens. Schicken Sie gern ein Foto oder rufen Sie an: 0172 2139306. Laut unserer Website ist lackierfreies Ausbeulen bis zu 65 % günstiger als klassische Verfahren."],
+    [/adresse|wo |anfahrt|parken|finde|einfahrt/i, "Sie finden uns in der Linderhauser Straße 38 in 42279 Wuppertal. Die Einfahrt liegt zwischen BestPrice Autohaus und Manhart."],
+    [/hol|bring|vor.?ort|abhol/i, "Wir bieten einen Hol- und Bringservice sowie einen Vor-Ort-Service an. Wie das in Ihrem Fall aussieht, besprechen Sie am besten kurz telefonisch: 0172 2139306."],
+    [/telefon|anruf|nummer|erreich|mail/i, "Sie erreichen uns unter 0172 2139306 oder per E-Mail an info@beulencenter.de."],
+  ];
+  const offline = (q) => (FAQ.find(([re]) => re.test(q)) || [, "Das klärt Herr Buetta am besten persönlich. Rufen Sie gern an unter 0172 2139306 oder schreiben Sie an info@beulencenter.de."])[1];
+
+  // Text sicher darstellen: Zeilen mit "- " oder "• " werden zur Liste, Sternchen fallen weg
+  function renderMsg(el, text) {
+    el.replaceChildren();
+    let list = null;
+    for (const raw of text.replace(/\*\*/g, "").split(/\n+/)) {
+      const line = raw.trim(); if (!line) continue;
+      const m = line.match(/^[-•*]\s+(.*)/);
+      if (m) {
+        if (!list) { list = document.createElement("ul"); el.appendChild(list); }
+        const li = document.createElement("li"); li.textContent = m[1]; list.appendChild(li);
+      } else {
+        list = null;
+        const p = document.createElement("p"); p.textContent = line; el.appendChild(p);
+      }
+    }
+  }
+  function bubble(cls, text = "") {
+    const el = document.createElement("div");
+    el.className = "msg " + cls; el.textContent = text;
+    log.appendChild(el); log.scrollTop = log.scrollHeight;
+    return el;
+  }
+
+  // Anliegen im Formular vorwählen, wenn der Besucher auf „Anfrage senden“ im Chat klickt
+  const ANL = [
+    [/delle|beule|hagel|park|ausbeul|lackierfrei/i, "Delle oder Beule"],
+    [/kratzer|lackschaden|smart/i, "Kratzer"],
+    [/steinschlag|scheibe|glas/i, "Steinschlag oder Autoglas"],
+    [/aufbereit|polit|reinig|leder|geruch|ozon|innenraum|versieg/i, "Aufbereitung"],
+  ];
+  function cta(contexts) {            // Nachrichten des Besuchers, neueste zuerst
+    let hit = null;
+    for (const c of contexts) { hit = ANL.find(([re]) => re.test(c)); if (hit) break; }
+    const box = document.createElement("div"); box.className = "msg-cta";
+    box.innerHTML = '<a href="#anfrage">Anfrage senden</a><a href="tel:+491722139306">Anrufen</a>';
+    box.querySelector('a[href="#anfrage"]').addEventListener("click", (e) => {
+      e.preventDefault();
+      const f = document.getElementById("anfrage");
+      if (hit) { const r = f.querySelector('input[name="anliegen"][value="' + hit[1] + '"]'); if (r) r.click(); }
+      toggle(false);
+      if (window.lenisInst) lenisInst.scrollTo(f, { offset: -20, duration: 1.4 });
+      else f.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    log.appendChild(box); log.scrollTop = log.scrollHeight;
+  }
+  function toggle(open) {
+    document.body.classList.toggle("chat-open", open);
+    fab.setAttribute("aria-expanded", open);
+    if (open && !greeted) { greeted = true; bubble("bot", "Guten Tag! Ich beantworte Fragen zu Dellen, Kratzern, Steinschlag und Aufbereitung, zu Öffnungszeiten und Anfragen. Was kann ich für Sie tun?"); }
+    if (open && matchMedia("(hover:hover)").matches) setTimeout(() => input.focus(), 250);
+    if (!open) fab.focus({ preventScroll: true });
+  }
+  async function ask(q) {
+    q = q.trim(); if (!q || busy) return;
+    busy = true; send.disabled = true; chips.hidden = true;
+    bubble("me", q); history.push({ role: "user", content: q });
+    input.value = ""; input.style.height = "";
+    const typing = bubble("bot typing"); typing.innerHTML = "<i></i><i></i><i></i>";
+    let answer = "", el = null;
+    try {
+      const res = await fetch("/api/chat", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ messages: history.slice(-16) }) });
+      if (!res.ok || !res.body) throw new Error("offline");
+      const reader = res.body.getReader(), dec = new TextDecoder();
+      for (;;) {
+        const { value, done } = await reader.read(); if (done) break;
+        answer += dec.decode(value, { stream: true });
+        if (answer.includes("\u0000FEHLER")) throw new Error("offline");
+        if (!el && answer.trim()) { typing.remove(); el = bubble("bot"); }
+        if (el) { renderMsg(el, answer); log.scrollTop = log.scrollHeight; }
+      }
+      if (!answer.trim()) throw new Error("offline");
+    } catch {
+      answer = offline(q);
+      typing.remove(); if (el) el.remove(); renderMsg(el = bubble("bot"), answer);
+    }
+    answer = answer.replace("\u0000FEHLER", "").trim();
+    history.push({ role: "assistant", content: answer });
+    if (/termin|anfrage|buchen|vereinbar|vorbeikommen|vorbei kommen|wann kann ich|foto|angebot/i.test(q) || /„Ihre Anfrage“|Formular/.test(answer)) cta(history.filter((m) => m.role === "user").map((m) => m.content).reverse());
+    busy = false; send.disabled = !input.value.trim();
+  }
+
+  fab.addEventListener("click", () => toggle(true));
+  document.getElementById("chatClose").addEventListener("click", () => toggle(false));
+  addEventListener("keydown", (e) => { if (e.key === "Escape" && document.body.classList.contains("chat-open")) toggle(false); });
+  chips.querySelectorAll(".chip-chat").forEach((c) => c.addEventListener("click", () => ask(c.textContent)));
+  input.addEventListener("input", () => {
+    send.disabled = busy || !input.value.trim();
+    input.style.height = ""; input.style.height = Math.min(input.scrollHeight, 120) + "px";
+  });
+  input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(input.value); } });
+  form.addEventListener("submit", (e) => { e.preventDefault(); ask(input.value); });
+})();
+</script>
+</body>
+</html>
